@@ -1,0 +1,4 @@
+featurecloud~=0.0.19
+bottle~=0.12.21
+pandas~=1.4.2
+bios~=0.1.2

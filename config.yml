@@ -1,0 +1,29 @@
+fc_example_config:
+  local_dataset:
+    train: "scotland.csv"
+    test: "scotland.csv"
+    central_test: null
+    detail:
+      sep: '\t'
+      label: "Group"
+    init_model: "model.pt"
+
+  centralized: True
+
+  simulation:
+    clients: Client_1, Client_2
+    dir: sample_data
+    clients_dir: c1,c2 # Comma separated list of clients' directories
+
+  logic:
+    mode: "file"
+    dir: "."
+
+  result:
+    normal_trainset: "y_pred.csv"
+    normal_testset: "y_test.csv"
+    detail:
+      sep: ','
+
+
+  use_smpc: False

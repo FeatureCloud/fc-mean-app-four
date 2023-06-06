@@ -1,0 +1,26 @@
+fc_glm:
+  local_dataset:
+    train: "scotland.csv"
+    test: "scotland.csv"
+    central_test: null
+    detail:
+      sep: '\t'
+      label: "Group"
+    init_model: "model.pt"
+
+  centralized: True
+
+#  simulation:
+#    clients_dir: c1,c2,c3 # Comma separated list of clients' directories
+
+  logic:
+    mode: "file"
+    dir: "."
+
+  result:
+    pred: "y_pred.csv"
+    target: "y_test.csv"
+    model: "model.pt"
+
+
+  use_smpc: False
